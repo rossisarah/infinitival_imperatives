@@ -1,0 +1,254 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinitival Imperatives - Supplementary Materials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 1rem;
+        }
+        
+        .author {
+            font-size: 1.1rem;
+            color: #495057;
+            margin-bottom: 0.5rem;
+        }
+        
+        .affiliation {
+            font-style: italic;
+            color: #6c757d;
+        }
+        
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .content-section:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            color: #495057;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .material-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .material-card:hover {
+            border-color: #667eea;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .material-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 0.5rem;
+        }
+        
+        .material-description {
+            color: #6c757d;
+            margin-bottom: 1rem;
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+        
+        .coming-soon {
+            opacity: 0.6;
+            font-style: italic;
+            color: #6c757d;
+        }
+        
+        .qr-section {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .qr-code {
+            width: 150px;
+            height: 150px;
+            margin: 1rem auto;
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .materials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Infinitival Imperatives in Italian</h1>
+            <div class="subtitle">Supplementary Materials</div>
+            <div class="author">Sarah Rossi</div>
+            <div class="affiliation">University of Pavia</div>
+        </div>
+        
+        <div class="content-section">
+            <h2>📊 Dataset & Corpus</h2>
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-title">CHILDES Corpus Data</div>
+                    <div class="material-description">Complete dataset of Italian imperatives extracted from CHILDES corpus, including frequency counts and morphological analysis.</div>
+                    <a href="#" class="download-btn coming-soon">Coming Soon</a>
+                </div>
+                <div class="material-card">
+                    <div class="material-title">Analysis Scripts</div>
+                    <div class="material-description">R scripts used for statistical analysis and data visualization of infinitival vs. inflected imperatives.</div>
+                    <a href="#" class="download-btn coming-soon">Coming Soon</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2>📄 Additional Materials</h2>
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-title">Extended Bibliography</div>
+                    <div class="material-description">Comprehensive bibliography on Romance imperatives, negation, and language acquisition.</div>
+                    <a href="#" class="download-btn coming-soon">Coming Soon</a>
+                </div>
+                <div class="material-card">
+                    <div class="material-title">Poster PDF</div>
+                    <div class="material-description">High-resolution PDF of the conference poster presentation.</div>
+                    <a href="#" class="download-btn coming-soon">Coming Soon</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2>🎯 Interactive Examples</h2>
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-title">Morphological Analyzer</div>
+                    <div class="material-description">Interactive tool to explore Italian imperative forms and their morphological properties.</div>
+                    <a href="#" class="download-btn coming-soon">Coming Soon</a>
+                </div>
+                <div class="material-card">
+                    <div class="material-title">Example Database</div>
+                    <div class="material-description">Searchable database of Italian imperative constructions with linguistic annotations.</div>
+                    <a href="#" class="download-btn coming-soon">Coming Soon</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section qr-section">
+            <h2>📱 Quick Access</h2>
+            <div class="qr-code">
+                <!-- QR code placeholder - you can generate one for this URL -->
+                <svg viewBox="0 0 100 100" style="width:100%; height:100%;">
+                    <rect width="100" height="100" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+                    <text x="50" y="50" text-anchor="middle" dy="0.3em" font-size="8" fill="#6c757d">QR Code</text>
+                </svg>
+            </div>
+            <p style="color: #6c757d; margin-top: 1rem;">Scan to share this page</p>
+        </div>
+        
+        <div class="content-section" style="text-align: center; margin-top: 3rem;">
+            <p style="color: #6c757d; font-size: 0.9rem;">
+                For questions or requests, contact: <strong>sarah.rossi@unipv.it</strong>
+            </p>
+            <p style="color: #adb5bd; font-size: 0.8rem; margin-top: 0.5rem;">
+                Last updated: September 2025
+            </p>
+        </div>
+    </div>
+</body>
+</html>
